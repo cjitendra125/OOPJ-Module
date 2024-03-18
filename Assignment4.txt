@@ -1,0 +1,92 @@
+1) Build a class Student which contains details about the Student and compile and run its 
+instance.
+
+package com.cdac.assignment;
+
+public class Student {
+	private int rollno=2;
+	private String name="Jitendra" ;
+	private int age=25;
+	private int marks=80;
+	private char bloodg='A';
+	
+	public void printDetails() {
+		System.out.println("Roll number: "+rollno+"|"+"Name: "+name+"|"+"Age: "+age+"|"+"BG: "+bloodg+"|"+"Marks: "+marks);
+	}
+	
+	public static void main(String[] args) {
+		Student s=new Student();
+		 s.printDetails();
+
+	}
+}
+
+2)Write a Vehicle class with overloaded methods that have a different number of parameters. 
+Demonstrate calling these overloaded methods with various numbers of arguments.
+package com.cdac.assignment;
+
+public class Vehicle {
+	String make;
+	String model;
+	int year;
+	long price;
+	
+	public Vehicle(String make, String model, int y, int p) {
+		this.make=make;
+		this.model=model;
+		this.year=y;
+		this.price=p;
+	}
+	
+	public void printDetails() {
+		System.out.println("Make	"+"|"+"Model		"+"|"+"year "+"|"+"Price	");
+		System.out.println(this.make+"|"+this.model+"|"+this.year+" |"+this.price);
+	}
+	
+	public void printDetails(String model,long p) {
+		this.model=model;
+		this.price=p;
+		System.out.println(this.make+"|"+this.model+"|"+this.year+" |"+this.price);
+	}
+	
+	public static void main(String[] args) {
+		Vehicle v=new Vehicle("Mahindra","Mahindra XUV300",2024,900000);
+		
+		v.printDetails();
+		v.printDetails("Mahindra XUV400",1500000);
+		//v.printDetails();
+		//v.printDetails();
+	}
+}
+
+3)Create a class Employee with multiple overloaded methods that have different parameter types (e.g., 
+int, double, String). Demonstrate calling each overloaded method with appropriate arguments
+
+package com.cdac.assignment;
+
+public class Employee {
+	int empid;
+	String name;
+	double salary;
+	
+	public void printDetails(int eid,String n,double sal) {
+		System.out.println("Id: "+eid+" | "+"Name: "+n+" | "+"Salary: "+sal);
+	}
+	public void printDetails(int eid,String name) {
+		System.out.println("Id: "+eid+" | "+"Name: "+name);
+		
+	}
+	public void printDetails(String name) {
+		System.out.println("Name: "+name);
+	}
+	
+	public static void main(String[] args) {
+		Employee e=new Employee();
+		e.printDetails("Abhishek");
+		e.printDetails(2, "Jitendra");
+		e.printDetails(03,"Amit", 25000);
+	}
+}
+
+
+

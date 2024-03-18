@@ -1,0 +1,43 @@
+//1) Write a program that demonstrates widening conversion from int to double and prints the result.
+//2) Create a program that demonstrates narrowing conversion from double to int and prints the result
+//3) Write a program that performs arithmetic operations involving different data types (int, double, float) 
+//	and observes how Java handles widening conversions automatically.
+//4) Write a Program that demonstrates widening conversion from int to (double,float, boolean, string) and 
+//	prints the result
+package com.cdac.assignment;
+
+public class Assignment3 {
+
+	public static void main(String[] args) {
+//		int intNumber =3256;
+//		double doubleNumber=intNumber;
+//		System.out.println(doubleNumber);
+
+//		double myDouble =456786.2534;
+//		int intNumber=(int)myDouble;
+//		System.out.println(intNumber);
+
+/*		int myInt1 = 2563;
+		int myInt2 = 2145;
+		float myFloat = 456.22f;
+		double myDouble = 89546.445;
+
+		double res=myInt1+myFloat;
+		double res1=myInt1-myFloat;
+		double res2=myInt1-myInt2;
+		double res3=myInt1*myFloat;
+		
+		System.out.println(res);
+		System.out.println(res1);
+		System.out.println(res2);
+		System.out.println(res3);
+*/
+		int myInt=2564;
+		float myFloat=myInt;
+		double myDouble=myInt;
+//		boolean myBoolean=myInt;//Cannot convert from int to boolean
+		String str=String.valueOf(myInt);
+		System.out.println(str+"abc");
+		
+	}
+}
